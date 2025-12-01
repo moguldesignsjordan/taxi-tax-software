@@ -211,7 +211,7 @@ const Hero = () => {
                 className="relative w-full h-auto object-contain transform transition-all duration-700 group-hover:scale-105 group-hover:-translate-y-2 filter drop-shadow-2xl"
                 onError={(e) => {
                     e.target.onerror = null; 
-                    e.target.src="/hero-box.png";
+                    e.target.src="/taxi.png";
                 }}
               />
            </div>
@@ -536,7 +536,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-black uppercase text-xl mb-2">Headquarters</h4>
-                    <p className="text-gray-600 text-lg">Fort Worth, TX</p>
+                    <p className="text-gray-600 text-lg">Fort Worth,TX</p>
                   </div>
                 </div>
               </Reveal>
