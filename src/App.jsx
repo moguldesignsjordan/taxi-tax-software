@@ -170,18 +170,21 @@ const Hero = () => {
             </div>
           </Reveal>
           
-          <Reveal delay="delay-100">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-heavy text-white leading-[0.9] tracking-tighter">
-              GOING<br />
-              <span className="text-white">PLACES?</span>
-            </h1>
-          </Reveal>
-          
-          <Reveal delay="delay-200">
-            <h2 className="text-4xl md:text-6xl font-heavy text-white tracking-tighter">
-              GO <span className="text-[#FDEA08] drop-shadow-[0_0_30px_rgba(253,234,8,0.5)]">TAXI.</span>
-            </h2>
-          </Reveal>
+<Reveal delay="delay-100">
+  <h1 className="text-6xl md:text-8xl lg:text-9xl font-heavy text-white leading-[0.9] tracking-tighter">
+    GOING<br />
+    PLACES?
+  </h1>
+</Reveal>
+<Reveal delay="delay-200">
+  <h2 className="text-6xl md:text-8xl lg:text-9xl font-heavy leading-[0.9] tracking-tighter mt-2">
+    <span className="text-white">GO</span>
+    {" "}
+    <span className="text-[#FDEA08] drop-shadow-[0_0_30px_rgba(253,234,8,0.5)]">TAXI.</span>
+  </h2>
+</Reveal>
+
+
           
           <Reveal delay="delay-300">
             <p className="text-gray-300 text-base md:text-xl max-w-lg leading-relaxed pt-2">
@@ -660,9 +663,41 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm gap-4">
-          <p>&copy; 2025 Taxi Tax Software. All rights reserved.</p>
-          <p>Designed for Professional EROs.</p>
+<div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm gap-4 text-center">
+
+
+
+  <div className="border-t border-gray-900 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm gap-4 text-center">
+
+  <p>&copy; 2025 Taxi Tax Software. All rights reserved.</p>
+
+  <p>Designed for Professional EROs</p>
+
+  <a 
+    href="https://moguldesignagency.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="group flex items-center gap-2 text-gray-500 hover:text-[#FDEA08] transition-all duration-300"
+  >
+    <img 
+      src="/logo.png" 
+      alt="Mogul Design Agency Logo" 
+      className="h-5 w-5 object-contain opacity-80 group-hover:opacity-100 transition-all duration-300"
+    />
+
+    <span className="relative">
+      Built With <span className="text-[#FDEA08]">♥</span> by 
+      <span className="ml-1 font-semibold text-white group-hover:text-[#FDEA08] transition-colors duration-300">
+        Mogul Design Agency LLC
+      </span>
+
+      <span className="absolute left-0 -bottom-0.5 w-full h-[2px] bg-gradient-to-r from-[#FDEA08] to-yellow-300 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
+    </span>
+  </a>
+
+</div>
+
+
         </div>
       </div>
     </footer>
